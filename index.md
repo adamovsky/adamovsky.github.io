@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+# Simplicity-centric React Project Organization Guidelines
 
-You can use the [editor on GitHub](https://github.com/adamovsky/adamovsky.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+This is a resource for front-end engineers who are interested in organizing their React project with a focus on decomposing complexity into its individual simple parts. This is a methodology engineered by Milan Adamovsky with the goal of normalizing problem solving effectiveness across skill levels, where speed is the main differentiating factor.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Principles
 
-### Markdown
+There are a few principles that are observed:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Alphabetization
 
-```markdown
-Syntax highlighted code block
+Everything that can be alphabetized, should be.
+## Single Purpose Principle
 
-# Header 1
-## Header 2
-### Header 3
+Everything should only ever cover one thing and one thing only. This includes not only components, but utilities, user stories, tasks, bugs, etc.
 
-- Bulleted
-- List
+## Decentralization
 
-1. Numbered
-2. List
+All assets needed by a component must live together in its folder. Centralization of assets is an anti-pattern in this methodology. 
 
-**Bold** and _Italic_ and `Code` text
+### Deletability
 
-[Link](url) and ![Image](src)
-```
+A component is the definition of a deletable unit. This means if such a unit is removed, all associated dependencies are removed with it. There should be no trailing (dead) files in central assets folders, etc. that need to be tracked down after a component is removed.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Intentional Coding
 
-### Jekyll Themes
+Code with intent. Slow down to move forward in a more thoughtful manner. Think through every step and its consequences. Code in a way where the reliance on tooling for quality is not a necessity.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/adamovsky/adamovsky.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## KISS Principle
 
-### Support or Contact
+Keeping things simple is at the forefront of this methology. Favor simplicity over sophistication where sophisticated solutions make the Developer Experience (DX) difficult.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Constraints
+
+There are a few self-imposted constraints that help catch runaway coding. These constaints act a tripwires for the engineer to help identify when closer attention must be paid to the code.
+
+## 100 lines of code per file
+
+A healthy lint count per file should usually be around the 50 to 70 lines of code.  Anything over 100 lines of code should prompt for a conversation with a peer or lead to see how the code can be decomposed.
+
+Do not sacrifice code cleanliness. Maintain proper form (eg indentation, spacing).
+
+## No acronyms or abbreviations
+
+Spell out all words. Remove all doubt and vagueness in the code. Leave minification to tooling.
+
+## One component per file
+
+A component should ever only `export default` one thing and one thing only. No other exports.
+
