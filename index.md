@@ -49,3 +49,6 @@ Spell out all words. Remove all doubt and vagueness in the code. Leave minificat
 
 A component should ever only `export default` one thing and one thing only. No other exports.
 
+## No commented code
+
+Only commit code that is actually being used. Commented code clutters the workspace. Code should be clear to the point that no comments are needed.
