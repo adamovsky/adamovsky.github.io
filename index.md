@@ -25,6 +25,8 @@ A component is the definition of a deletable unit. This means if such a unit is 
 
 Code with intent. Slow down to move forward in a more thoughtful manner. Think through every step and its consequences. Code in a way where the reliance on tooling for quality is not a necessity.
 
+### <a href="explicit.md">Code Explicitly</a>
+
 ## KISS Principle
 
 Keeping things simple is at the forefront of this methology. Favor simplicity over sophistication where sophisticated solutions make the Developer Experience (DX) difficult.
