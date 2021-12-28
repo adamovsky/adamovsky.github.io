@@ -52,3 +52,11 @@ A component should ever only `export default` one thing and one thing only. No o
 ## No commented code
 
 Only commit code that is actually being used. Commented code clutters the workspace. Code should be clear to the point that no comments are needed.
+
+## No overwriting of quality control tools
+
+Do not disable lint rules (or similar). They are there for a reason.
+
+# Exceptions
+
+In the event any of these principles or constraints need to be broken, an engineer must call for a technical discussion meeting with peers or tech lead to where an approval must be agreed upon.
