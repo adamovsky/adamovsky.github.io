@@ -2,6 +2,8 @@
 
 This is a resource for front-end engineers who are interested in organizing their React project with a focus on decomposing complexity into its individual simple parts. This is a methodology engineered by Milan Adamovsky with the goal of normalizing problem solving effectiveness across skill levels, where speed is the main differentiating factor.
 
+## <a href="philosophy.md">Philosophy</a>
+
 # Principles
 
 There are a few principles that are observed:
